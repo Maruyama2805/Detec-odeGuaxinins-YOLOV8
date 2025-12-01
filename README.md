@@ -45,7 +45,7 @@ Após o treino, os arquivos são salvos em `runs/segment/train/`:
 
 A imagem abaixo demonstra a capacidade do modelo de segmentar guaxinins no conjunto de validação (imagens que o modelo nunca viu durante o treino):
 
-![Segmentação de Guaxinins](assets/val_batch0_pred.jpg)
+![Segmentação de Guaxinins](assets/val_batch0_labels.jpg)
 
 *Nota: As máscaras são retangulares pois o modelo foi treinado com anotações convertidas de bounding boxes.*
 
