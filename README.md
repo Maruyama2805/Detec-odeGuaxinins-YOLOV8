@@ -16,6 +16,7 @@ O script organiza o dataset [ndb796/YOLO-Datasets](https://github.com/ndb796/YOL
 ├── images/     # Imagens originais
 ├── labels/     # Labels convertidos (Caixa -> Polígono)
 └── data.yaml   # Configuração gerada pelo script
+```
 
 ## 🚀 Como Executar
 
@@ -40,5 +41,13 @@ Após o treino, os arquivos são salvos em `runs/segment/train/`:
 * **`weights/best.pt`**: Modelo final para inferência.
 * **`val_batch0_pred.jpg`**: Exemplo visual das máscaras geradas.
 
+### Exemplo Visual:
+
+A imagem abaixo demonstra a capacidade do modelo de segmentar guaxinins no conjunto de validação (imagens que o modelo nunca viu durante o treino):
+
+![Segmentação de Guaxinins](assets/val_batch0_pred.jpg)
+
+*Nota: As máscaras são retangulares pois o modelo foi treinado com anotações convertidas de bounding boxes.*
+
 ---
-*Projeto desenvolvido para a disciplina de Visão Computacional. Baseado na arquitetura Ultralytics YOLOv8.*
+*Projeto desenvolvido para a disciplina de Inteligencia Artificial para Automação. Baseado na arquitetura Ultralytics YOLOv8.*
